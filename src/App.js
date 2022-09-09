@@ -2,22 +2,37 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const user = {
+    fname: "Harmain",
+    lname: "Rizwan"
+  }
+
+  let name = <h2> {user.fname} </h2>;
+
+  function fullname() {
+    return(
+      <h1> {user.fname + " " + user.lname} </h1>
+    );
+  }
+
+  function chname(nm) {
+    document.getElementById('bt').addEventListener("click", (nm) => {
+      let name = document.getElementById('gt');
+      nm = name;
+      return(
+        <h1> {nm} </h1>
+      );
+    });
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type="text" id='gt' />
+      <button id='bt'>Show</button>
+      {/* {fullname()} */}
+      {chname()}
+      {/* {name} */}
     </div>
   );
 }
