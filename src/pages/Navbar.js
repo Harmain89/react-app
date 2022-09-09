@@ -1,3 +1,6 @@
+// import React, { Component } from 'react';
+
+
 
 function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,3 +40,6 @@ function Navbar() {
     </nav>
 
 }
+
+
+export default Navbar;
