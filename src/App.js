@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './pages/Navbar'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   }
   return (
     <>
+    <Navbar />
       <h1 style={mystyle} className="name">
         Hello React
       </h1>
