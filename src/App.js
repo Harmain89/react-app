@@ -1,7 +1,6 @@
 import {Nav} from './pages/Navbar'
 import logo from './logo.svg';
 import './App.css';
-// import './pages/Navbar';
 
 function App() {
 
