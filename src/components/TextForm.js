@@ -6,7 +6,7 @@ export function TextForm(props) {
   const [text, setText] = useState("Enter Text");
 
   const handleOnClick = () => {
-    console.log("handleOnClick Has Been Clicked");
+    // console.log("handleOnClick Has Been Clicked");
     let upperCaseText = text.toUpperCase();
     setText(upperCaseText);
   }
