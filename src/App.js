@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import {Nav} from './pages/Navbar'
 import logo from './logo.svg';
 import './App.css';
-import './pages/Navbar';
+// import './pages/Navbar';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
   }
   return (
     <>
-    <Navbar />
+    <Nav />
       <h1 style={mystyle} className="name">
         Hello React
       </h1>
