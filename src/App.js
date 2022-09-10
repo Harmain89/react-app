@@ -1,8 +1,9 @@
 import {Nav} from './components/Navbar'
 import logo from './logo.svg';
 import './App.css';
+import { TextForm } from './components/TextForm';
 
-function App() {
+function App(props) {
 
   const mystyle = {
     color: "red",
@@ -11,9 +12,12 @@ function App() {
   return (
     <>
     <Nav navTitle = "TextUtils" />
-      <h1 style={mystyle} className="name">
-        Hello React
+      <h1 style={mystyle} className="name mt-3">
+        {props.AppName}
       </h1>
+      <div className="container">
+        <TextForm heading = "Enter text to analyze" />
+      </div>
     </>
   );
 }
