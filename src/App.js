@@ -1,4 +1,4 @@
-import {Nav} from './pages/Navbar'
+import {Nav} from './components/Navbar'
 import logo from './logo.svg';
 import './App.css';
 
