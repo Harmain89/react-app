@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <>
-    <Nav />
+    <Nav navTitle = "TextUtils" />
       <h1 style={mystyle} className="name">
         Hello React
       </h1>
