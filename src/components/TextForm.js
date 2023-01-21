@@ -27,7 +27,7 @@ export function TextForm(props) {
           <textarea className="form-control" value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="10"></textarea>
       </div>
       <button className="btn btn-primary" onClick={handleOnClick} >Convert To UpperCase</button>
-      <button className="btn btn-primary float-right" onClick={clear} >Convert To UpperCase</button>
+      <button className="btn btn-primary float-right" onClick={clear} >Clear</button>
 
       <div className="container my-5">
         <h1 className="">Your Text Summary</h1>
